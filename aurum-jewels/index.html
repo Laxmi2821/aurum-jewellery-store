@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aurum & Co. — premium jewellery shopping demo with men's and women's collections." />
+  <title>Aurum & Co. — Fine Jewellery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topbar">FREE INSURED SHIPPING ON ORDERS OVER ₹2,999 <span>•</span> 7-DAY EASY RETURNS</div>
+  <header class="site-header">
+    <button class="icon-btn mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+    <a class="brand" href="#home"><span class="brand-mark">A</span><span>AURUM <em>&amp; CO.</em></span></a>
+    <nav id="mainNav">
+      <a href="#home">Home</a><a href="#shop">Shop</a><a href="#women">Women</a><a href="#men">Men</a><a href="#offers">Offers</a><a href="#about">Our Story</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" title="Search">⌕</button>
+      <button class="icon-btn" id="accountBtn" title="Account">♙</button>
+      <button class="cart-btn" id="cartBtn">Bag <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE NEW JEWELLERY EDIT</p>
+        <h1>Wear the moment.<br><i>Keep the glow.</i></h1>
+        <p>Curated gold, silver and diamond-inspired pieces designed for everyday statements and unforgettable occasions.</p>
+        <div class="hero-buttons"><a class="btn btn-dark" href="#shop">Shop collection <span>→</span></a><button class="text-btn" id="styleQuizBtn">Find my style <span>✦</span></button></div>
+        <div class="trust-row"><span>✦ 4.8/5 customer rating</span><span>♢ Gift-ready packaging</span><span>✓ Secure checkout</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-glow"></div>
+        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1100&q=85" alt="Gold jewellery collection" />
+        <div class="floating-card"><small>NEW DROP</small><strong>Celeste<br>Gold Edit</strong><span>From ₹1,899</span></div>
+      </div>
+    </section>
+
+    <section class="category-strip" id="shop">
+      <div><span>01</span><h3>Women</h3><p>Necklaces · Rings · Earrings · Bracelets</p><button data-filter="women">Explore →</button></div>
+      <div><span>02</span><h3>Men</h3><p>Chains · Rings · Bracelets · Cuffs</p><button data-filter="men">Explore →</button></div>
+      <div><span>03</span><h3>Gifts</h3><p>Curated pieces for every milestone</p><button data-filter="gift">Explore →</button></div>
+    </section>
+
+    <section class="section products-section" id="women">
+      <div class="section-head"><div><p class="eyebrow">SHOP THE COLLECTION</p><h2>Made to be <i>noticed.</i></h2></div><div class="filters"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="women">Women</button><button class="filter" data-filter="men">Men</button><button class="filter" data-filter="rings">Rings</button><button class="filter" data-filter="necklaces">Necklaces</button><button class="filter" data-filter="earrings">Earrings</button><button class="filter" data-filter="bracelets">Bracelets</button></div></div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="center"><button class="btn btn-outline" id="showMoreBtn">Show all pieces</button></div>
+    </section>
+
+    <section class="story-banner" id="men">
+      <div class="story-image"><img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1200&q=85" alt="Elegant jewellery close-up"></div>
+      <div class="story-copy"><p class="eyebrow">THE MEN'S EDIT</p><h2>Quiet confidence.<br><i>Sharp details.</i></h2><p>Minimal chains, signet rings and textured bracelets built for daily wear. Designed to layer without trying too hard.</p><a href="#shop" class="btn btn-dark" data-scroll-filter="men">Shop men's jewellery</a></div>
+    </section>
+
+    <section class="benefits">
+      <div><span>01</span><h3>Certified quality</h3><p>Thoughtfully selected materials and quality checks before dispatch.</p></div>
+      <div><span>02</span><h3>Gift-ready</h3><p>Every order arrives in our signature reusable jewellery box.</p></div>
+      <div><span>03</span><h3>Secure checkout</h3><p>Choose UPI, cards, net banking or cash on delivery in this demo.</p></div>
+      <div><span>04</span><h3>Easy returns</h3><p>Simple 7-day return flow for eligible unused pieces.</p></div>
+    </section>
+
+    <section class="offers" id="offers"><div><p class="eyebrow">LIMITED-TIME OFFER</p><h2>Get <strong>10% OFF</strong> your first order</h2><p>Use code <b>WELCOME10</b> at checkout.</p></div><button class="btn btn-light" id="offerBtn">Shop &amp; save</button></section>
+
+    <section class="section reviews" id="about"><div class="section-head"><div><p class="eyebrow">LOVED BY OUR COMMUNITY</p><h2>Little luxuries,<br><i>big compliments.</i></h2></div><div class="rating-big">★★★★★ <strong>4.8</strong><small>from 2,431 reviews</small></div></div><div class="review-grid"><article><div>★★★★★</div><p>“The packaging feels so premium. The necklace looked even better in person.”</p><b>— Ananya R.</b></article><article><div>★★★★★</div><p>“I ordered a ring and chain for my brother. Delivery was quick and the quality is excellent.”</p><b>— Rohan M.</b></article><article><div>★★★★★</div><p>“Finally a jewellery site that makes gifting easy. Loved the styling suggestions.”</p><b>— Meera S.</b></article></div></section>
+  </main>
+
+  <footer><div class="footer-main"><div><a class="brand" href="#home"><span class="brand-mark">A</span><span>AURUM <em>&amp; CO.</em></span></a><p>Modern jewellery for meaningful moments.</p></div><div><h4>Shop</h4><a href="#shop">Women</a><a href="#shop">Men</a><a href="#shop">New arrivals</a><a href="#offers">Offers</a></div><div><h4>Help</h4><a href="#" id="trackLink">Track order</a><a href="#">Shipping & returns</a><a href="#">Care guide</a><a href="#">Contact</a></div><div><h4>Join the list</h4><p>Get first access to new drops and private offers.</p><div class="subscribe"><input id="emailInput" type="email" placeholder="Email address"><button id="subscribeBtn">→</button></div></div></div><div class="footer-bottom"><span>© 2026 Aurum &amp; Co. Demo storefront</span><span>Secure payments · Privacy · Terms</span></div></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer"><div class="drawer-head"><h3>Your bag</h3><button class="close" data-close="cartDrawer">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-bottom"><div class="coupon"><input id="couponInput" placeholder="Coupon code"><button id="couponBtn">Apply</button></div><div class="summary"><span>Subtotal</span><strong id="subtotal">₹0</strong></div><div class="summary"><span>Shipping</span><strong id="shipping">₹0</strong></div><div class="summary total"><span>Total</span><strong id="cartTotal">₹0</strong></div><button class="btn btn-dark full" id="checkoutBtn">Proceed to checkout</button></div></aside>
+
+  <div class="modal" id="authModal"><div class="modal-card auth-card"><button class="close" data-close="authModal">×</button><div class="auth-brand">AURUM <span>&amp; CO.</span></div><div class="tabs"><button class="tab active" data-auth="login">Log in</button><button class="tab" data-auth="signup">Create account</button></div><form id="loginForm" class="auth-form"><h2>Welcome back</h2><p>Sign in to view your orders and saved pieces.</p><input required type="email" placeholder="Email address"><input required type="password" placeholder="Password"><button class="btn btn-dark full">Log in</button><small>Demo only — no real account is created.</small></form><form id="signupForm" class="auth-form hidden"><h2>Create your account</h2><p>Save favourites, track orders and get member offers.</p><input required placeholder="Full name"><input required type="email" placeholder="Email address"><input required type="password" placeholder="Create password"><button class="btn btn-dark full">Create account</button><small>Demo only — no real account is created.</small></form></div></div>
+
+  <div class="modal" id="checkoutModal"><div class="modal-card checkout-card"><button class="close" data-close="checkoutModal">×</button><div class="checkout-steps"><span class="active">1. Delivery</span><span>2. Payment</span><span>3. Confirm</span></div><div id="checkoutBody"></div></div></div>
+
+  <div class="modal" id="quizModal"><div class="modal-card quiz-card"><button class="close" data-close="quizModal">×</button><p class="eyebrow">JEWELLERY MATCH</p><h2>Find your everyday sparkle.</h2><div id="quizBody"></div></div></div>
+
+  <div class="search-panel" id="searchPanel"><div class="search-inner"><button class="close" id="searchClose">×</button><p class="eyebrow">SEARCH AURUM</p><input id="searchInput" placeholder="Try “gold ring”, “men”, “earrings”…"><div id="searchResults"></div></div></div>
+  <div class="chatbot"><button id="chatToggle" class="chat-toggle">✦</button><div class="chat-window" id="chatWindow"><div class="chat-head"><div><b>Aurum Assistant</b><small>Usually replies instantly</small></div><button id="chatClose">×</button></div><div class="chat-messages" id="chatMessages"><div class="bot">Hi! I can help with products, sizing, shipping, returns or checkout. What can I help you with?</div></div><div class="chat-suggestions"><button data-chat="shipping">Shipping?</button><button data-chat="returns">Returns?</button><button data-chat="payment">Payment?</button><button data-chat="gift">Gift help</button></div><div class="chat-input"><input id="chatInput" placeholder="Type a message…"><button id="chatSend">→</button></div></div></div>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>

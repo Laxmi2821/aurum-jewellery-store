@@ -1,0 +1,8 @@
+Image/source references used in the demo:
+- Unsplash jewellery search: https://unsplash.com/s/photos/jewellery
+- Unsplash jewellery photography: https://unsplash.com/s/photos/jewellery-photography
+- Unsplash gold necklace photo: https://unsplash.com/photos/gold-colored-pendant-necklace-y2ErhoE92KA
+- Unsplash gold necklace photo: https://unsplash.com/photos/gold-colored-necklace-OEuo7nx97fM
+- Unsplash ring photo: https://unsplash.com/photos/a-diamond-ring-sitting-on-top-of-a-table-ppoafBSZJ3Q
+- Unsplash pendant photo: https://unsplash.com/photos/gold-necklace-on-black-rock-eX2io94cijw
+- Other product imagery is loaded from publicly accessible jewellery product pages shown in the web search used to create this demo.
